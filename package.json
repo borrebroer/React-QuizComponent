@@ -4,14 +4,14 @@
   "private": true,
   "dependencies": {
     "react": "16.2.0",
-    "react-dom": "16.2.0",
+    "react-dom": "^16.14.0",
     "react-scripts": "1.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "./node_modules/.bin/cross-env CI=true react-scripts test --env=jsdom --noStackTrace || true",
-    "test:module1": "./node_modules/.bin/cross-env CI=true react-scripts test --env=jsdom --noStackTrace module1 || true",
+    "test": "../node_modules/.bin/cross-env CI=true react-scripts test --env=jsdom --noStackTrace || true",
+    "test:module1": "../node_modules/.bin/cross-env CI=true react-scripts test --env=jsdom --noStackTrace module1 || true",
     "test:module2": "./node_modules/.bin/cross-env CI=true react-scripts test --env=jsdom --noStackTrace module2 || true",
     "test:module3": "./node_modules/.bin/cross-env CI=true react-scripts test --env=jsdom --noStackTrace module3 || true",
     "test:module4": "./node_modules/.bin/cross-env CI=true react-scripts test --env=jsdom --noStackTrace module4 || true",
