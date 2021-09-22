@@ -4,7 +4,7 @@ import React, {Component} from "react";
 class QuizQuestionButton extends Component{
     render(){
         return(
-            <li><button onClick={this.handleClick.bind(this)}>{this.props.button_text}</button></li>
+            <li><button onClick={this.handleClick.bind(this)} text={this.props.button_text}></button></li>
         );
     }
 
