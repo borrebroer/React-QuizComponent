@@ -24,10 +24,14 @@ class Quiz extends Component {
         else {
             return(
                 <div>
-                    <QuizQuestion quiz_question={quizData.quiz_questions[this.state.quiz_position - 1]} />
+                    <QuizQuestion quiz_question={quizData.quiz_questions[this.state.quiz_position - 1]} showNextQuestionHandler={this.showNextQuestion.bind(this)} />
                 </div>
             );    
         }
+    }
+
+    showNextQuestion() {
+        this.setState((quiz_position) => quiz_position = quiz_position + 1);
     }
 }
 export default Quiz;
