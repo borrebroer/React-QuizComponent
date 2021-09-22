@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import QuizQuestion from './QuizQuestion.js';
-import QuizEnd from './QuizEnd.js'
+import QuizEnd from './QuizEnd.js';
+
 
 let quizData = require('./quiz_data.json');
 
@@ -31,7 +32,7 @@ class Quiz extends Component {
     }
 
     showNextQuestion() {
-        this.setState((state) => {return {quiz_position: state.quiz_question + 1}});
+        this.setState((state) => {return {quiz_position: state.quiz_position + 1}});
     }
 }
 export default Quiz;
